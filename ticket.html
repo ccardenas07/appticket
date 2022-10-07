@@ -1,0 +1,59 @@
+<html>
+    <head>
+    	<title>Ecobike</title>
+        <script src="js/validate.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script>
+    function makepage(src)
+    {
+      // We break the closing script tag in half to prevent
+      // the HTML parser from seeing it as a part of
+      // the *main* page.
+    
+      return "<html>\n" +
+        "<head>\n" +
+        "<title>Ticket</title>\n" +
+        "<script>\n" +
+        "function step1() {\n" +
+        "  setTimeout('step2()', 10);\n" +
+        "}\n" +
+        "function step2() {\n" +
+        "  window.print();\n" +
+        "  window.close();\n" +
+        "}\n" +
+        "</scr" + "ipt>\n" +
+        "</head>\n" +
+        "<body onLoad='step1()'>\n" +
+        "<img src='" + src + "'/>\n" +
+        "</body>\n" +
+        "</html>\n";
+    }
+    
+    function printme(evt)
+    {
+      if (!evt) {
+        // Old IE
+        evt = window.event;
+      }    
+      var image = evt.target;
+      if (!image) {
+        // Old IE
+        image = window.event.srcElement;
+      }
+      src = "img/tiket.png";
+      link = "about:blank";
+      var pw = window.open(link, "_new");
+      pw.document.open();
+      pw.document.write(makepage(src));
+      pw.document.close();
+	  window.open("index.html","_self");
+    }
+    </script>
+    </head>
+    <body>
+        <div id="ticketbg">
+            <div class="print" id="print" onClick="printme(event)">
+            </div>
+        </div>
+    </body>
+</html>

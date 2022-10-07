@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#formbg
+{
+	width:780px;
+	height:800px;
+	background:url(../img/formbg.jpg);
+}
+.inputt
+{
+	height: 22px;
+}
+#name
+{
+	margin-top: 365px;
+	margin-left: 276px;
+	width: 143px;
+}
+#lastname
+{
+	margin-top: 365px;
+	margin-left: 444px;
+	width: 143px;
+}
+#mail
+{
+	margin-top: 410px;
+	margin-left: 276px;
+	width: 310px;
+
+}
+#phone
+{
+	margin-top: 456px;
+	margin-left: 276px;
+	width: 211px;
+}
+#ci
+{
+	margin-top: 503px;
+	margin-left: 276px;
+	width: 211px;
+}
+.enviar
+{
+	width: 138px;
+	height: 38px;
+	background: url(../img/btnEnviar.png);
+	background-size: cover;
+	border: none;
+	cursor: pointer;
+}
+.enviar:hover
+{
+	width: 138px;
+	height: 38px;
+	background: url(../img/btnEnviar.png);
+	background-size: cover;
+	border: none;
+	cursor: pointer;
+	margin-top:1px;
+}
+#btnsend
+{
+	position: absolute;
+	margin-top: 547px;
+	margin-left: 277px;
+}
+#ticketbg
+{
+	background:url(../img/App_ecobike_imprimir.jpg);
+	width:780px;
+	height:800px;
+}
+.print
+{
+	background:url(../img/BtnImprimir.png);
+	width:115px;
+	height:31px;
+	position:absolute;
+	margin-left:332px;
+	cursor:pointer;
+}
+#print
+{
+	margin-top: 695px;
+}
+#print:hover
+{
+	margin-top: 694px;
+}
+#mainImg
+{
+	visibility:hidden;
+	position:absolute;
+}
